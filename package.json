@@ -1,0 +1,23 @@
+{
+  "name": "@swdv-660-1w-18-fa1/capstone-project",
+  "version": "1.0.0",
+  "description": "SWDV691 Capstone Project - ShiftHub Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgreenlaw1/capstone-project.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wgreenlaw1/capstone-project/issues"
+  },
+  "homepage": "https://github.com/wgreenlaw1/capstone-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
