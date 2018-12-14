@@ -1,0 +1,37 @@
+
+/* General */
+
+body {
+  text-align: center;
+}
+
+li {
+  text-align: left;
+}
+
+.navbar {
+  margin: 0 auto 1% auto;
+}
+
+.shifthub-header {
+  margin: 5% auto;
+}
+
+/* Dashboard Page */
+
+.date-selector {
+    display: inline-flex;
+    margin: 1% auto;
+}
+
+.view-selector {
+  margin: 1% auto;
+}
+
+.shift-list {
+  margin: 1% auto;
+}
+
+.day {
+  border: 1px solid;
+}
