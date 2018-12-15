@@ -2,7 +2,7 @@
   "name": "capstone-project",
   "version": "1.0.0",
   "description": "SWDV691 Capstone Project - ShiftHub Application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/wgreenlaw1/capstone-project.git"
   },
-  "author": "",
+  "author": "WDG",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wgreenlaw1/capstone-project/issues"
@@ -19,6 +19,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "nodemon": "^1.18.8"
+    "nodemon": "^1.18.8",
+    "request": "^2.88.0"
   }
 }

@@ -1,10 +1,4 @@
 
-/* General */
-
-body {
-  text-align: center;
-}
-
 li {
   text-align: left;
 }
@@ -20,18 +14,36 @@ li {
 /* Dashboard Page */
 
 .date-selector {
-    display: inline-flex;
-    margin: 1% auto;
+  display: inline-flex;
+  margin: 2% auto;
+  padding: 0;
 }
 
 .view-selector {
-  margin: 1% auto;
+  margin: 2% auto;
 }
 
 .shift-list {
-  margin: 1% auto;
+  margin: 2% auto;
 }
 
-.day {
-  border: 1px solid;
+.time-selector {
+  display: inline-flex;
+  margin: 2% 0 2% 0;
+  padding: 2% 0 2% 0;
+}
+
+.filters {
+  margin: 2% auto;
+}
+
+.filter-buttons {
+  margin: 2% 0;
+  width: 45%;
+}
+
+/* Employee Roster Page */
+
+.employee-roster-table {
+  margin: 2% auto;
 }
