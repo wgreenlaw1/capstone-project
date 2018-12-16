@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>ShiftHub - Schedule Builder</title>
 </head>
@@ -38,6 +38,71 @@
         </ul>
       </div>
     </nav>
+  </div>
+
+  <!-- List of Shifts -->
+  <div class="container">
+    <table class="table table-striped shift-list">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Employee</th>
+          <th>Position</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12/16/2018</td>
+          <td>9:00 AM</td>
+          <td>5:00 PM</td>
+          <td>John Alden</td>
+          <td>Store Manager</td>
+          <td>Management</td>
+        </tr>
+        <tr>
+          <td>12/16/2018</td>
+          <td>9:00 AM</td>
+          <td>5:00 PM</td>
+          <td>Alfred Matthews</td>
+          <td>Assistant Store Manager</td>
+          <td>Management</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- New Schedule Entry Form -->
+  <div class="container">
+    <form action="/schedule-builder" method="post">
+      <div class="form-group">
+        <label for="startDate" class="col-form-label">Date</label>
+        <input type="date" name="date">
+      </div>
+      <div class="form-group">
+        <label for="startTime" class="col-form-label">Start Time</label>
+        <input type="time" name="startTime">
+      </div>
+      <div class="form-group">
+        <label for="endTime" class="col-form-label">End Time</label>
+        <input type="time" name="endTime">
+      </div>
+      <div class="form-group">
+        <label for="employee" class="col-form-label">Employee</label>
+        <input type="text" name="employee">
+      </div>
+      <div class="form-group">
+        <label for="position" class="col-form-label">Position</label>
+        <input type="text" name="position" placeholder="Position">
+      </div>
+      <div class="form-group">
+        <label for="department" class="col-form-label">Department</label>
+        <input type="text" name="department" placeholder="Department">
+      </div>
+      <input type="submit" value="Add to Schedule" class="btn btn-primary">
+    </form>
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

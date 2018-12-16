@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>ShiftHub - Employee Roster</title>
 </head>
@@ -41,13 +41,39 @@
   </div>
 
   <!-- Page Heading -->
-  <div class="container">
+  <div class="container employee-roster-heading">
     <h2>Employee Roster</h2>
+  </div>
+
+  <!-- Employee Roster Table View -->
+  <div class="container">
+    <table class="table table-striped employee-roster-table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Position/Role</th>
+          <th scope="col">Department</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>John</td>
+          <td>Alden</td>
+          <td>Store Manager</td>
+          <td>Management</td>
+          <td>Full-Time</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <!-- Large Modal for Form -->
   <div class="container">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Add New Employee</button>
+    <button type="button" class="btn btn-primary add-new-employee-button" data-toggle="modal" data-target=".bd-example-modal-lg">Add New Employee</button>
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -86,32 +112,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Employee Roster Table View -->
-  <div class="container">
-    <table class="table table-striped employee-roster-table">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Position/Role</th>
-          <th scope="col">Department</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>12345</td>
-          <td>John</td>
-          <td>Alden</td>
-          <td>Store Manager</td>
-          <td>Management</td>
-          <td>Full-Time</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -6,8 +6,7 @@ const request = require("request");
 
 const app = express();
 
-// Required for styles.css to work
-app.use(express.static("./"));
+app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -34,6 +33,18 @@ app.post("/employee-roster", function(req, res){
 
 app.get("/schedule-builder", function(req, res){
   res.sendFile(__dirname + "/schedule-builder.html");
+});
+
+// POST request for schedule-builder 
+app.post("/schedule-builder", function(req, res){
+  // Log form data from schedule-builder page
+  console.log(req.body.date);
+  console.log(req.body.startTime);
+  console.log(req.body.endTime);
+  console.log(req.body.employee);
+  console.log(req.body.position);
+  console.log(req.body.department);
+
 });
 
 app.listen(3000, function() {
