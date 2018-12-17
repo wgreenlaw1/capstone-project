@@ -6,38 +6,37 @@ const request = require("request");
 
 const app = express();
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(express.static("public"));
 
-app.use(bodyParser.urlencoded({extended: true}));
-
-app.get("/", function(req, res){
+app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/", function(req, res){
+app.post("/", function(req, res) {
   console.log(req.body.month);
   console.log(req.body.day);
   console.log(req.body.year);
-
 });
 
-app.get("/employee-roster", function(req, res){
+app.get("/employee-roster", function(req, res) {
   res.sendFile(__dirname + "/employee-roster.html");
 });
 
-app.post("/employee-roster", function(req, res){
-  var employeeID = parseFloat(req.body.employeeID);
+app.post("/employee-roster", function(req, res) {
 
+  var employeeID = parseFloat(req.body.employeeID);
   res.send("You entered " + employeeID + " as the ID.");
+
 });
 
-app.get("/schedule-builder", function(req, res){
+app.get("/schedule-builder", function(req, res) {
   res.sendFile(__dirname + "/schedule-builder.html");
 });
 
-// POST request for schedule-builder 
-app.post("/schedule-builder", function(req, res){
-  // Log form data from schedule-builder page
+app.post("/schedule-builder", function(req, res) {
   console.log(req.body.date);
   console.log(req.body.startTime);
   console.log(req.body.endTime);
